@@ -1,8 +1,15 @@
-package addtwonumbers
+package addTwoNumbers2
 
 import (
 	"fmt"
 )
+
+func Run() {
+	l1 := createListNode([]int{5})
+	l2 := createListNode([]int{5})
+
+	echoList(addTwoNumbers(l1, l2))
+}
 
 type ListNode struct {
 	Val  int
@@ -44,20 +51,14 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func echoList(node *ListNode) {
+	var numbers []int
+
 	for node != nil {
-		fmt.Printf("%d,", node.Val)
+		numbers = append(numbers, node.Val)
 		node = node.Next
 	}
-	fmt.Println()
-}
 
-func Run() {
-	l1 := createListNode([]int{5})
-	l2 := createListNode([]int{5})
-
-	sumList := addTwoNumbers(l1, l2)
-
-	echoList(sumList)
+	fmt.Println(numbers)
 }
 
 func createListNode(vals []int) *ListNode {

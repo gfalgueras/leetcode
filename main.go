@@ -1,7 +1,9 @@
 package main
 
-import "leetcode/addtwonumbers"
+import (
+	"leetcode/mergeTwoSortedLists21"
+)
 
 func main() {
-	addtwonumbers.Run()
+	mergeTwoSortedLists21.Run()
 }
