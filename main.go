@@ -1,9 +1,9 @@
 package main
 
 import (
-	"leetcode/mergeTwoSortedLists21"
+	"leetcode/mergeSortedArray88"
 )
 
 func main() {
-	mergeTwoSortedLists21.Run()
+	mergeSortedArray88.Run()
 }
